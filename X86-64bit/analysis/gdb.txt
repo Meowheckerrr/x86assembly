@@ -1,0 +1,11 @@
+     0x401002 <_start+0002>    movsxd esp, DWORD PTR [r9+0x64]
+     0x401006 <_start+0006>    gs     ins DWORD PTR es:[rdi], dx
+     0x401008 <_start+0008>    jns    0x40102b
+     0x40100a <_start+000a>    xor    rax, 0x21449
+     0x401010 <_start+0010>    xor    rax, rax
+
+
+
+$rax   : 0x21796d6564616341 ("Academy!"?)
+$rax   : 0x21796d6564637708 ("\bwcdemy!"?)
+
