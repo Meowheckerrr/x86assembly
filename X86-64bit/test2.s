@@ -1,15 +1,14 @@
 global _start
 
 section .data
-    message db "Meowhappy"
-    length equ $-message
+    message db "Hello HTB Academy!"
 
 section .text
 _start:
     mov rsi, message
     mov rdi, 1
+    mov rdx, 18
     mov rax, 1
-    mov rdx, length
     syscall
 
     mov rax, 60
