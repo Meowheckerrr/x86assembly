@@ -9,6 +9,8 @@ file = ELF(sys.argv[1])
 shellcode = file.section(".text")
 print(shellcode.hex())
 
+#Shellcode requirements
+print("%d bytes - Found NULL byte" % len(shellcode)) if [i for i in shellcode if i == 0] else print("%d bytes - No NULL bytes" % len(shellcode))
 #python extract.py test
 #Without the hex encoding
 #b'\xb8\x01\x00\x00\x00\xbf\x01\x00\x00\x00H\xbe\x00 @\x00\x00\x00\x00\x00\xba\t\x00\x00\x00\x0f\x05\xb8<\x00\x00\x00\xbf\x00\x00\x00\x00\x0f\x05'
